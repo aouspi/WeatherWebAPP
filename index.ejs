@@ -1,0 +1,13 @@
+<%- include("header") -%>
+<div style="margin-top:100px;">
+  <h1 class="header">Know your weather !!</h1>
+  <form action="/" style="margin-top:20px;" method="post">
+     <label for="cityName" class="form-label">City : </label>
+     <input type="text" name="city" class="form-input" id="cityName" >
+     <button type="submit" class="btn btn-primary" >Search</button>
+  </form>
+  <h4 class="temp" style="margin-top:20px;">The temperature in <%=city%> is : <%=temp%> degress celcius.</h4>
+     <h4 class="temp"><%=weatherDes%></h4><img src="<%=imgUrl%>">
+
+</div>
+<%- include("footer") -%>
